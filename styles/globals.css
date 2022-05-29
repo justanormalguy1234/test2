@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  @apply bg-gray-900;
+}
+
+.overlay > div:not(:first-of-type) > div > span > span {
+  position: relative;
+  z-index: 99999999999;
+  @apply bg-gradient-to-r from-pink-500 to-violet-500 opacity-20 !important;
+}
